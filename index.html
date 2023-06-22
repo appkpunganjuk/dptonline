@@ -24,7 +24,7 @@
     <main style="margin-left:10px;margin-right:10px">
       <div class="card">
         <div class="card-body">
-          <h6 class="text-center card-title" id="byname-title">PEMILIHAN UMUM TAHUN 2024</h6>
+          <h6 class="text-center card-title" id="byname-title"></h6>
           <div class="row mt-3 mb-3">
             <div class="col">
               <label class="form-label" style="margin-right:16px">Tahapan</label>
@@ -53,16 +53,27 @@
             <input type="hidden" name="filename" id="filename">
             <div class="col">
               <label class="form-label" style="margin-right:16px">&nbsp;</label>
-              <div class="dropdown d-grid gap-2">
-                <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-download"></i>&nbsp;Unduh Data </button>
-                </button>
-                <ul class="dropdown-menu">
-                  <li class="d-grid gap-2"><a class="dropdown-item" href="#" id="btn-unduh"><i class="fas fa-users"></i>&nbsp;Daftar Pemilih Tetap</a></li>
-                  <li class="d-grid gap-2"><a class="dropdown-item" href="#" id="btn-unduh-sk"><i class="fas fa-copy"></i>&nbsp;&nbsp;SK Penetapan</a></li>
-                </ul>
-              </div>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-warning" id="btn-unduh"><i class="fas fa-download"></i>&nbsp;Unduh Data</button>
+                </div>
             </div>
+            <div class="col">
+                <label class="form-label" style="margin-right:16px">&nbsp;</label>
+                <div class="dropdown d-grid gap-2">
+                  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-file-download"></i>&nbsp;Unduh Berkas </button>
+                  <ul class="dropdown-menu">
+                    <li class="d-grid gap-2">
+                      <a class="dropdown-item" href="#" id="btn-unduh-ba">
+                        <i class="fas fa-file-pdf"></i>&nbsp;BA Rekapitulasi dan Penetapan </a>
+                    </li>
+                    <li class="d-grid gap-2">
+                      <a class="dropdown-item" href="#" id="btn-unduh-sk">
+                        <i class="fas fa-file-pdf"></i>&nbsp;SK Penetapan </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
           </div>
           <div class="table-responsive">
             <table class="table table-stripped table-hover table-bordered" id="dps-table">

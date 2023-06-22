@@ -6,5 +6,9 @@
   {
     "isi"   : "dpshp",
     "teks"  : "Daftar Pemilih Sementara Hasil Perbaikan (DPSHP)"
+  },
+  {
+    "isi"   : "dpt",
+    "teks"  : "Daftar Pemilih Tetap (DPT)"
   }
 ]
