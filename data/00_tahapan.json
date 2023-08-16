@@ -1,0 +1,14 @@
+[
+  {
+    "isi"   : "dps",
+    "teks"  : "Daftar Pemilih Sementara (DPS)"
+  },
+  {
+    "isi"   : "dpshp",
+    "teks"  : "Daftar Pemilih Sementara Hasil Perbaikan (DPSHP)"
+  },
+  {
+    "isi"   : "dpt",
+    "teks"  : "Daftar Pemilih Tetap (DPT)"
+  }
+]

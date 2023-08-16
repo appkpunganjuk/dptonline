@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Daftar Pemilih Online Kabupaten Nganjuk</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://primemirza.github.io/20220801/logo.ico">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="pt-3">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <img class="mb-2" src="assets/img/LOGO_KPU_RI+++.png" width="64">
+            <h5>KOMISI PEMILIHAN UMUM</h5>
+            <h5>KABUPATEN NGANJUK</h5>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main style="margin-left:10px;margin-right:10px">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-center card-title" id="byname-title"></h6>
+          <div class="row mt-3 mb-3">
+            <div class="col">
+              <label class="form-label" style="margin-right:16px">Tahapan</label>
+              <select class="form-control" id="cmb_tahapan">
+                <option value="">Pilih ...</option>
+              </select>
+            </div>
+            <div class="col">
+              <label class="form-label" style="margin-right:16px">Kecamatan</label>
+              <select class="form-control" id="cmb_kec">
+                <option value="">Pilih ...</option>
+              </select>
+            </div>
+            <div class="col">
+              <label class="form-label" style="margin-right:16px">Desa/Kelurahan</label>
+              <select class="form-control" id="cmb_kel">
+                <option value="">Pilih ...</option>
+              </select>
+            </div>
+            <div class="col">
+              <label class="form-label" style="margin-right:16px">Nomor TPS</label>
+              <select class="form-control" id="cmb_tps">
+                <option value="">Pilih ...</option>
+              </select>
+            </div>
+            <input type="hidden" name="filename" id="filename">
+            <div class="col">
+              <label class="form-label" style="margin-right:16px">&nbsp;</label>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-warning" id="btn-unduh"><i class="fas fa-download"></i>&nbsp;Unduh Data</button>
+                </div>
+            </div>
+            <div class="col">
+                <label class="form-label" style="margin-right:16px">&nbsp;</label>
+                <div class="dropdown d-grid gap-2">
+                  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-file-download"></i>&nbsp;Unduh Berkas </button>
+                  <ul class="dropdown-menu">
+                    <li class="d-grid gap-2">
+                      <a class="dropdown-item" href="#" id="btn-unduh-ba">
+                        <i class="fas fa-file-pdf"></i>&nbsp;BA Rekapitulasi dan Penetapan </a>
+                    </li>
+                    <li class="d-grid gap-2">
+                      <a class="dropdown-item" href="#" id="btn-unduh-sk">
+                        <i class="fas fa-file-pdf"></i>&nbsp;SK Penetapan </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-stripped table-hover table-bordered" id="dps-table">
+              <thead class="bg-warning">
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Jenis Kelamin</th>
+                  <th>Usia</th>
+                  <th>Desa/Kelurahan</th>
+                  <th>RT</th>
+                  <th>RW</th>
+                  <th>Ket</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="text-center">Jumlah Pengunjung <br>
+        <img src="https://www.cutercounter.com/hits.php?id=hvvxnafcp&nd=5&style=71" border="0" alt="hit counter">
+      </p>
+      <p class="text-center">KPU Kabupaten Nganjuk © 2023</p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
